@@ -240,8 +240,13 @@ mark {
     margin-bottom: 0;
 }
 
+
+/* 原来的颜色
 .bg-color {
     background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+} */
+.bg-color {
+    background-image: linear-gradient(to right, #8470FF 0%, #0f9d58 100%);
 }
 
 .text-color {
