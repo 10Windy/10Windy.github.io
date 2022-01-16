@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Leetcode on VSCode</title>
+      <link href="/2022/01/16/leetcode-on-vscode/"/>
+      <url>/2022/01/16/leetcode-on-vscode/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>打开<strong>vscode扩展</strong>(或<strong>Ctrl+Shift+X</strong>)</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117005021281.png"></p><p>搜索<strong>leetcode</strong>并安装第一个<strong>官方版本</strong></p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117005202453.png"></p><p>安装完后，<strong>关闭vscode</strong></p><h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><p>去官网下载对应版本即可</p><p><a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></p><p>推荐<strong>长期维护版</strong>，<strong>msi</strong>后缀的文件</p><p>下载后，全部<strong>默认</strong>选项安装即可</p><p>安装完成后打开<strong>命令提示符</strong>输入：node –version</p><p>若显示版本号则安装成功</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117005827916.png"></p><h2 id="登录LeetCode"><a href="#登录LeetCode" class="headerlink" title="登录LeetCode"></a>登录LeetCode</h2><p>打开vscode，单击LeetCode模块</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117005410110.png"></p><p>单击<strong>地球</strong>选择版本，选择<strong>中国版</strong></p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010013193.png"></p><p>单击<strong>Sign in to LeetCode</strong></p><p>选择<strong>Cookie</strong>方式登录（因为各种原因，其他方式都登不上）</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010226148.png"></p><p>输入用户名或者<strong>邮箱</strong>（输入账号绑定的邮箱）</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010356065.png"></p><h3 id="获取cookie："><a href="#获取cookie：" class="headerlink" title="获取cookie："></a>获取cookie：</h3><p>首先打开LeetCode官网 <a href="https://leetcode-cn.com/">https://leetcode-cn.com/</a></p><p>在网页版登录</p><p>然后按<strong>F12</strong>或者鼠标<strong>右键</strong>网页空白处单击<strong>检查</strong></p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010718306.png"></p><p>单击<strong>Network</strong></p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010755672.png"></p><p>单击LeetCode官网里的<strong>题库</strong>链接</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117011338053.png"></p><p>这时候<strong>Network</strong>窗口里会出现很多数据，找到<strong>all</strong>，单击</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010916856.png"></p><p>能在该项下找到<strong>cookie</strong>，复制<strong>cookie</strong>（冒号后的所有内容）</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117011036005.png"></p><p>把复制好的<strong>cookie</strong>输入到对话框内，回车确认</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117010441721.png"></p><p>显示如下界面，则表示<strong>登录成功</strong></p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117011140759.png"></p><h2 id="刷题"><a href="#刷题" class="headerlink" title="刷题"></a>刷题</h2><p>可以根据问题的<strong>顺序</strong>、<strong>难易程度</strong>、<strong>标签</strong>、<strong>公司</strong>等信息刷题</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117011716900.png"></p><p>以这道题为例，单击code now</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117011826347.png"></p><p>我选择在新窗口打开，如果是第一次打开，vscode会自动在电脑的用户目录创建一个.leetcode文件夹，专门存放leetcode的文件</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117011943867.png"></p><p>打开文件后，code，结束可以<strong>test</strong>测试一下基础样例是否正确，也可以直接<strong>submit</strong>进行提交</p><p><img src="/2022/01/16/leetcode-on-vscode/image-20220117012251706.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cpp </tag>
+            
+            <tag> leetcode </tag>
+            
+            <tag> vscode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Anaconda+tensorflow2.0-gpu+pycharm安装</title>
       <link href="/2022/01/05/anaconda-tensorflow2.0-gpu-pycharm-an-zhuang/"/>
       <url>/2022/01/05/anaconda-tensorflow2.0-gpu-pycharm-an-zhuang/</url>
