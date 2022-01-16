@@ -399,7 +399,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    362
+                    802
                 </div>
                 
 
@@ -455,6 +455,36 @@ INFO  Created: D:<span class="token punctuation">\</span>BLOG<span class="token 
 <h2 id="Markdown编辑"><a href="#Markdown编辑" class="headerlink" title="Markdown编辑"></a>Markdown编辑</h2><p>给文章分类加标签</p>
 <pre class="line-numbers language-none"><code class="language-none">tags: [标签1，标签2，标签3]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+
+
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>在md文件中插入图片的语法为</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">![]()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>其中<strong>方括号</strong>为图片描述，<strong>圆括号</strong>为图片路径。</p>
+<p>一般情况下，图片有三种路径，分别是<strong>相对路径</strong>、<strong>绝对路径</strong>和<strong>网络路径</strong>。</p>
+<p><strong>绝对路径</strong>是计算机中的绝对位置，<strong>相对路径</strong>是相对于当前文件的路径。</p>
+<p>由于博客要部署在网站上，部署后会生成新的文件目录，所以应当使用相对路径而不是绝对路径。</p>
+<p>首先在**.config.yaml**文件中更改配置：</p>
+<p>post_asset_folder: true</p>
+<p>当改配置被应用后，使用hexo new 命令创建新文章时，会生成相同名字的文件夹，也就是文章的<strong>资源文件夹</strong>。</p>
+<p>使用命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-renderer-marked<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>安装插件，并在.config.yaml中更改配置如下</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">marked</span><span class="token punctuation">:</span>
+  <span class="token key atrule">prependRoot</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">postAsset</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>之后就可以在md中方便的插入图片了。</p>
+<h3 id="hexo与Typora完美结合"><a href="#hexo与Typora完美结合" class="headerlink" title="hexo与Typora完美结合"></a>hexo与Typora完美结合</h3><p>上述是从文章资源文件夹中引用图片，前提是将图片先放到资源文件夹，如果图片众多，十分影响效率。</p>
+<p>首先打开Typora-&gt;文件-&gt;偏好设置-&gt;图像</p>
+<p>调成如图所示的设置：</p>
+<p><img src="/2021/12/23/hexo-ji-ben-cao-zuo/image-20220117024035443.png"></p>
+<p>使用该配置后，可以直接复制网页中的图片地址，粘贴到Typora后，会自动复制该图片到资源文件夹，同时自动更改路径。</p>
+<p>同理，上传本地路径的图片也会自动的复制一份副本到资源文件夹，并自动更改路径。</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>需要在自动生成的路径前加入”./“，才能在网页部署时正常显示，如：</p>
+<p>自动生成路径： 资源文件夹/123.jpg </p>
+<p>需更改为：./资源文件夹/123.jpg</p>
 
                 
             </div>
@@ -986,7 +1016,7 @@ INFO  Created: D:<span class="token punctuation">\</span>BLOG<span class="token 
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.6k</span>&nbsp;字
+                class="white-color">2k</span>&nbsp;字
             
             
             
